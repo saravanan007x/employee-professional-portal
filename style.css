@@ -186,15 +186,13 @@ body {
 .hero-text {
     max-width: 650px;
 
-    margin: auto;
+    margin: 0 auto 30px;
 
     color: #69736f;
 
     font-size: 17px;
 
     line-height: 1.7;
-
-    margin-bottom: 30px;
 }
 
 
