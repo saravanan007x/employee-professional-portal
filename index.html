@@ -1,173 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Saravanan | Full Stack Developer</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stackly | We Solve IT Problems</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- ================= HEADER ================= -->
+  <!-- glowing light beam in the background -->
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
 
-    <header class="site-header">
+  <!-- NAVBAR -->
+  <header class="nav">
+    <a href="#home" class="logo">S<span>tackly</span></a>
+    <nav id="menu">
+      <a href="#home"><small>01/</small> Home</a>
+      <a href="#services"><small>02/</small> Services</a>
+      <a href="#process"><small>03/</small> Process</a>
+      <a href="#about"><small>04/</small> About</a>
+      <a href="#contact"><small>05/</small> Contact</a>
+    </nav>
+    <div class="nav-info">hello@stackly.com<br><span id="clock">00:00:00</span></div>
+    <button class="burger" id="burger">Menu</button>
+  </header>
 
-        <nav class="navbar">
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <!-- clean status meta -->
+    <div class="hero-meta reveal">
+      <span><i></i> 12ms ping</span>
+      <span><i></i> 99.98% uptime</span>
+      <span><i></i> 45+ clients</span>
+    </div>
 
-            <!-- Logo / Brand -->
+    <h1 class="big-title">STACKLY<b class="cursor">_</b></h1>
 
-            <a href="#" class="logo">
-                Saravanan<span>.</span>
-            </a>
+    <div class="scroll-hint">scroll <b>↓</b></div>
 
+    <div class="hero-text">
+      <p>We fix IT problems before they slow your business down. From websites to servers, we build solutions that are fast, secure and simple to use.</p>
+      <a href="#contact" class="btn">Start a project</a>
+    </div>
+  </section>
 
-            <!-- Navigation -->
+  <!-- NUMBERS -->
+  <section class="stats">
+    <div><h3 data-count="120">0</h3><p>Projects done</p></div>
+    <div><h3 data-count="45">0</h3><p>Happy clients</p></div>
+    <div><h3 data-count="24">0</h3><p>Hour support</p></div>
+    <div><h3 data-count="99">0</h3><p>% Uptime</p></div>
+  </section>
 
-            <ul class="nav-links">
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <h2 class="title reveal">Our <span>Services</span></h2>
+    <div class="cards">
+      <div class="card reveal"><span>01</span><h4>Web Development</h4><p>Modern, fast and responsive websites and web apps built for your business.</p></div>
+      <div class="card reveal"><span>02</span><h4>Cloud &amp; DevOps</h4><p>Hosting, deployment and automation so your product stays online.</p></div>
+      <div class="card reveal"><span>03</span><h4>IT Support</h4><p>Quick help for bugs, network issues and everyday tech problems.</p></div>
+      <div class="card reveal"><span>04</span><h4>Cyber Security</h4><p>We protect your data and systems from threats and downtime.</p></div>
+    </div>
+  </section>
 
-                <li>
-                    <a href="#home">Home</a>
-                </li>
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <h2 class="title reveal">How we <span>work</span></h2>
+    <div class="steps">
+      <div class="step reveal"><b>1</b><h4>Listen</h4><p>We understand your problem.</p></div>
+      <div class="step reveal"><b>2</b><h4>Plan</h4><p>We pick the right solution.</p></div>
+      <div class="step reveal"><b>3</b><h4>Build</h4><p>We code, test and fix.</p></div>
+      <div class="step reveal"><b>4</b><h4>Support</h4><p>We stay with you after launch.</p></div>
+    </div>
+  </section>
 
-                <li>
-                    <a href="#about">About</a>
-                </li>
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <h2 class="title reveal">Why <span>Stackly?</span></h2>
+    <p class="reveal">We are a small, focused IT team. No confusing words, no hidden costs. You tell us the problem, we give you a working solution.</p>
+  </section>
 
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <h2 class="title reveal">Let's <span>talk</span></h2>
+    <form id="form" class="reveal">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea rows="4" placeholder="Tell us your IT problem" required></textarea>
+      <button class="btn" type="submit">Send message</button>
+      <p id="msg"></p>
+    </form>
+  </section>
 
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
+  <footer>© 2026 Stackly. All rights reserved.</footer>
 
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
-
-            <!-- Header Button -->
-
-            <a href="#contact" class="header-button">
-                Let's Talk
-            </a>
-
-        </nav>
-
-    </header>
-
-
-    <!-- ================= MAIN ================= -->
-
-    <main>
-
-        <section id="home" class="hero">
-
-            <p class="small-heading">
-                FULL STACK DEVELOPER
-            </p>
-
-            <h1>
-                Building simple ideas
-                into <span>useful websites.</span>
-            </h1>
-
-            <p class="hero-text">
-                I am Saravanan, a Full Stack Developer who enjoys
-                creating clean, responsive and user-friendly
-                web applications.
-            </p>
-
-            <a href="#projects" class="hero-button">
-                View My Work
-            </a>
-
-        </section>
-
-
-        <!-- About -->
-
-        <section id="about">
-
-            <h2>About Me</h2>
-
-            <p>
-                I am continuously improving my development skills
-                by building practical projects and learning modern
-                web technologies.
-            </p>
-
-        </section>
-
-
-        <!-- Skills -->
-
-        <section id="skills">
-
-            <h2>Skills</h2>
-
-            <p>
-                HTML &nbsp; | &nbsp;
-                CSS &nbsp; | &nbsp;
-                JavaScript &nbsp; | &nbsp;
-                React &nbsp; | &nbsp;
-                Node.js
-            </p>
-
-        </section>
-
-
-        <!-- Projects -->
-
-        <section id="projects">
-
-            <h2>Projects</h2>
-
-            <p>
-                Portfolio Website • Healthcare Application •
-                Vehicle Auction System
-            </p>
-
-        </section>
-
-
-        <!-- Contact -->
-
-        <section id="contact">
-
-            <h2>Contact</h2>
-
-            <p>
-                Let's connect and build something useful together.
-            </p>
-
-            <a href="mailto:saravanan1772006f@gmail.com">
-                Send Email
-            </a>
-
-        </section>
-
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <p>
-            © 2026 Saravanan. All rights reserved.
-        </p>
-
-    </footer>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
